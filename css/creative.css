@@ -3,6 +3,15 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+
+/*
+Color Guide
+Dark Blue - #2C3E50
+Orange - #FC4349
+Light Gray - #D7DADB
+Light Blue - #6DBCDB
+White - FFFFFF
+*/
 html,
 body {
   height: 100%;
@@ -19,6 +28,9 @@ hr {
 hr.light {
   border-color: white;
 }
+hr.blue {
+    border-color: #3498DB;
+}
 a {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
@@ -29,6 +41,26 @@ a:hover,
 a:focus {
   color: #eb3812;
 }
+a.alternate {
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+  color: white;
+}
+a.alternate:hover,
+a.alternate:focus {
+  color: #2C3E50;
+}
+a.blue {
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+  color: #6DBCDB;
+}
+a.blue:hover,
+a.blue:focus {
+  color: #2C3E50;
+}
 h1,
 h2,
 h3,
@@ -36,6 +68,9 @@ h4,
 h5,
 h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    color: 
 }
 p {
   font-size: 16px;
@@ -49,8 +84,19 @@ p {
   background-color: #222222;
   color: white;
 }
-.text-faded {
-  color: rgba(255, 255, 255, 0.7);
+.bg-blue {
+  background-color: #3498DB;
+  color: white;
+}
+.bg-white {
+    background-color: #ffffff;
+    color: #3498DB;
+}
+.text-white {
+  color: #ffffff;
+}
+.text-blue {
+  color: #3498DB;
 }
 section {
   padding: 100px 0;
@@ -445,7 +491,7 @@ body {
     50% { opacity:0; }
     100% { opacity:1; }
 }
-.scroll-downs {
+.scroll-down {
   position:absolute;
   top: 80%;
   right: 0;
@@ -455,7 +501,7 @@ body {
   width: 34px;
   height: 56px;
 }
-.mousey {
+.mouse {
   width: 10px;
   padding: 10px 12px;
   height: 50px;
@@ -487,7 +533,7 @@ body {
     }
 }
 @media (max-width: 768px) {
-    .mousey {
+    .mouse {
         width: 5px;
         padding: 7px 9px;
         height: 40px;
